@@ -1,0 +1,239 @@
+Yml pipeline:
+
+trigger
+ -master
+
+pool
+ vmimage:ubuntu-latest
+
+steps:
+ -scrpit: echo, world
+ displayname: 'Run on oneline script'
+
+-script:
+  echo add other tasks to build test and deploy
+
+What Is Argo CD?¶
+Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes.
+
+
+Helm:
+
+
+Helm is a package manager for Kubernetes that helps in deploying the applications, managing the versions of application resources, and packaging the application files. Helm deploys charts. A chart is basically a packaged application.
+
+chart.yaml  - Contain metadata about chart like name, version, description, Maintainers, depenedencies
+values.yaml -This file defines configuration values
+templates - this folder contains YAML templetes to kuberrnet resources, such as deployment services configmaps
+
+Helm commands: Helm install - to intsall chart
+               ex: helm install <release-name> <chart-name>
+                    helm install my-release stable/nginx-ingress
+               helm upgrade - to upgrade a release
+               helm rollback - to roll back previous release
+               helm search - to search avaiable charts in repo
+               helm init - To initialize Helm on your Kubernetes cluster,
+               helm repo list -To list all the chart repositories configured on your machine
+
+Kubernetes commands: 
+
+luster Information:
+
+kubectl cluster-info: Display information about the Kubernetes cluster.
+Nodes:
+
+kubectl get nodes: List all the nodes in the cluster.
+kubectl describe node <node-name>: Show detailed information about a specific node.
+Namespaces:
+
+kubectl get namespaces: List all the namespaces in the cluster.
+kubectl create namespace <namespace-name>: Create a new namespace.
+kubectl delete namespace <namespace-name>: Delete a namespace and all resources within it.
+Pods:
+
+kubectl get pods: List all pods in the current namespace.
+kubectl get pods -n <namespace>: List all pods in a specific namespace.
+kubectl describe pod <pod-name>: Show detailed information about a specific pod.
+kubectl logs <pod-name>: Show the logs of a specific pod.
+kubectl exec -it <pod-name> -- <command>: Execute a command inside a running pod.
+Deployments:
+
+kubectl get deployments: List all deployments in the current namespace.
+kubectl get deployments -n <namespace>: List all deployments in a specific namespace.
+kubectl describe deployment <deployment-name>: Show detailed information about a specific deployment.
+kubectl rollout status deployment/<deployment-name>: Check the status of a deployment rollout.
+Services:
+
+kubectl get services: List all services in the current namespace.
+   kubectl get services -n <namespace>: List all services in a specific namespace.
+kubectl describe service <service-name>: Show detailed information about a specific service.
+kubectl port-forward <pod-name> <local-port>:<pod-port>: Forward a local port to a port on a specific pod.
+ConfigMaps and Secrets:
+
+kubectl get configmaps: List all ConfigMaps in the current namespace.
+kubectl get configmaps -n <namespace>: List all ConfigMaps in a specific namespace.
+kubectl describe configmap <configmap-name>: Show detailed information about a specific ConfigMap.
+kubectl get secrets: List all secrets in the current namespace.
+kubectl get secrets -n <namespace>: List all secrets in a specific namespace.
+kubectl describe secret <secret-name>: Show detailed information about a specific secret.
+
+single helm for multi env:
+
+maintain a diff values files for each environm- dev-values.yaml, stage-values.yaml, prod-
+
+configurtaion management, namespace management, CICD pipline integartion
+
+
+
+
+Single yaml pipeline for multi branch:
+
+trigger:
+  branches:
+    include:
+      - main
+      - development
+      - feature/*
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+- stage: Build
+  jobs:
+  - job: BuildJob
+    steps:
+    # Define your build steps here
+
+- stage: Test
+  jobs:
+  - job: TestJob
+    steps:
+    # Define your test steps here
+
+- stage: Deploy
+  jobs:
+  - deployment: DeployToDevelopment
+    displayName: Deploy to Development
+    environment: 'Development'
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/development'))
+    steps:
+    # Define your deployment steps for the Development environment here
+
+  - deployment: DeployToFeature
+    displayName: Deploy to Feature
+    environment: 'Feature'
+    condition: and(succeeded(), startsWith(variables['Build.SourceBranch'], 'refs/heads/feature/'))
+    steps:
+    # Define your deployment steps for the Feature environment here
+
+  - deployment: DeployToMain
+    displayName: Deploy to Main
+    environment: 'Main'
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
+    steps:
+    # Define your deployment steps for the Main environment here
+
+
+
+
+
+Pipeline condition for branch
+
+trigger:
+  branches:
+    include:
+      - main
+      - development
+      - feature/*
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+- stage: Build
+  jobs:
+  - job: BuildJob
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
+    steps:
+    # Define your build steps here
+
+- stage: Test
+  jobs:
+  - job: TestJob
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/development')
+    steps:
+    # Define your test steps here
+
+- stage: Deploy
+  jobs:
+  - deployment: DeployToMain
+    displayName: Deploy to Main
+    environment: 'Main'
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
+    steps:
+    # Define your deployment steps for the Main environment here
+
+
+Single helm with mutil env
+----------------------------
+
+Chart.yaml
+
+dependencies:
+ -name: dependency-chart-1
+  version: 1.2.3
+  repository: https://chart.example.com
+
+  -name: dependency-chart-2
+   version:1.5.7
+   repository: https://chart.example.com
+
+
+values.yaml
+
+-name: dependency-chart-1
+  version: 1.2.3 -dev
+  repository: https://chart.example.com
+values:
+ #specify dev specific configuratons
+
+
+
+
+
+
+local-exec provisioners
+
+resource "aws_instance" "web1" {
+ ami = "ami-dhdjjdirrr4"
+ instance_type = "t2.micro"
+
+
+
+provisioner "local-exec" {
+ command = "echo 'hello, terraform!'"
+
+}
+
+}
+
+
+remote-exec provisioners
+
+
+provisioner "remote-exec" {
+ inline = [
+    "sudo apt-get update"
+     "sudo apt-get install -y nginx"
+      "sudo service start nginx"
+]
+
+}
+}
+
+
+
+
+
+

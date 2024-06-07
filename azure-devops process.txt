@@ -1,0 +1,58 @@
+
+AZurre SRo app migartion
+
+Content:
+
+1. Azure Platform setup
+
+SRO app hosted in Azure kubernetes service(AKS)
+Database in Azure Database for postgreSQL
+prod resource group:macs-service-sro-prd-gp
+URL:
+
+PROD AKS: aks-prod-pepl-01
+2. ARM Templates for creation of database(postgre sql database)
+
+main.tf( postgresql-database.tf)
+varible.tf (postgresql-varible.tf)
+provider.tf (
+
+
+3. terraform scripts for private endpoint
+
+3. Linux virtual machine cration using terraform
+
+main.tf -linuxvm.tf
+varible.tf - linux-varible.tf
+
+ 
+
+3. Create a git repository( azure-repo) for application
+
+Devops team needs to create deployment yaml files under manifest folder
+
+
+4. Access details
+ 
+5. Service connections should be create 
+
+Kubenetes--> Edit service connection(service account), Provide server URL, Secret, Service connection name, description
+
+5. In Build pipeline we have to add these tasks(Install Terraform latest, Terraform INIT, Terraform PLAN, Terraform build)
+
+  In Release pipeline we have to add these tasks( Install Terraform latest, List files, Terraform workspace, Terraform PLAN, Terraform APPLY)
+
+
+
+
+Build pipelien for Kuberntes:
+
+Tasks:
+1.Submit scan job to security API: 
+2. sro-deployment-DockerNOdePUll: Pull the image from Jfrog Artifactory
+3.sr0-ddeployment-docker-build: build the image from docker file and uploaded to repo
+4.sro-dev-deployment-Docker-Build and push: Build and push the image to the ACR
+5.copyfiles: arifacts: copy files form source folder to target folder
+6. Drop copy: publish build artifacts to Azure pipelines
+
+RBAC - Role based access control

@@ -1,0 +1,208 @@
+LEGATO COMPANY:
+Legato is the global capability center of a leading U.S. health care insurance company, Anthem Inc. Legato is committed to transforming healthcare through operational excellence, innovation and digital transformation.That help Health Insurers reduce cost and improve service delivery.
+
+Carelon Global Solutions (CGS) is a healthcare solutions company that is simplifying complex operational processes to improve the health of the healthcare system. 
+
+ACCion labs:
+Accion Labs is a global technology services firm with specialized focus on servicing enterprise and technology firms in the emerging technologies such as Web 2.0, SAAS, Cloud, eBusiness, Mobile, social media
+
+RADWARE:
+Radware is a global leader of application delivery and cyber security solutions for virtual, cloud and software defined data centers. Our award-winning solutions portfolio delivers service level assurance for business-critical applications, while maximizing IT efficiency
+
+CGI:
+Insights you can act on
+
+Founded in 1976, CGI is among the largest IT and business consulting services firms in the world. We are insights-driven and outcomes-based to help accelerate returns on your investments. Across 21 industries in 400 locations worldwide, we provide comprehensive, scalable and sustainable IT and business consulting services that are informed globally and delivered locally.
+
+INFOSYS:
+Infosys is a global leader in next-generation digital services and consulting. We enable clients in more than 56 countries to navigate their digital transformation.arning through the transfer of digital skills, expertise, and ideas from our innovation ecosystem. We are deeply committed to being a well-governed, environmentally sustainable organization where diverse talent thrives in an inclusive workplace.
+
+LTIMindtree:
+LTIMindtree is a global technology consulting and digital solutions company that enables enterprises across industries to reimagine business models, accelerate innovation, and maximize growth by harnessing digital technologies
+
+HARMAN:
+Harman International Industries, commonly known as Harman, is an American audio electronics company. Since 2017, the company has been an independent subsidiary of Samsung Electronics. Headquartered in Stamford, Connecticut, US, Harman maintains major operations in the Americas, Europe and Asia.
+
+Tech Mahindra:
+
+Tech Mahindra offers innovative and customer-centric digital experiences, enabling enterprises, associates and the society to Rise for a more equal world, future readiness, and value creation. It is a USD 6+ billion organization with 157,000+ professionals across 90 countries helping 1290 global customers, including Fortune 500 companies. It is focused on leveraging next-generation technologies including 5G, Metaverse, Blockchain, Quantum Computing, Cybersecurity, Artificial Intelligence, and more, to enable end-to-end digital transformation for global customer
+
+torryharris:
+AWS, Python, Kubernetes, Docker, Terraform, Jenkins, Linux, Data science, ML Frameworks, Advanced math and statistics knowledge, Data structure, Teckton, Helm, gitlab, Vault, Consul
+
+
+Self intro:
+
+Hi, my name is manikanta. I am the new DevOps lead and I am looking forward to working with you in furture. I'm working at Legato helath technogies for four and half years and I am also a certified as AWS SysOps.”
+
+
+Get my parking:
+
+
+Get My Parking was founded in 2015 by Chirag Jain and Rasik Pansare.
+Our vision is to make every parking transaction a sub-conscious experience. With a strong foundation of the team, technology, and partnerships, we are creating a future-proof parking platform to connect the parking industry internally as well as with urban mobility players.
+
+Our technology enables seamless use of parking for pick up and drop of shared mobility, storage and deliveries for e-commerce, EV charging, and on the fly automotive services.
+
+provider of Interoperable Smart Parking Platform connects all parking and mobility stakeholders on a common platform who were until now operating in silos. We are a team of doers with a clear mission to digitize parking industry globally.
+
+Our GMP Platform delivers you that coherent interoperable ecosystem.
+
+GMP app: Custom-branded app and digital parking solutions- Users can find parking, create and manage sessions, and pay online for the perfect hands-on parking experience.
+
+Products: GMP app, GMP QR, GMP permit, GMP access, GMP IQ
+
+
+JOB change:
+I want to build on one of the aspects that I like most about the work I currently am doing…
+One of the things that has made things a little more challenging is that I’d like to have a platform where I could share my ideas and offer up ways to improve…(service, operations, technology, communication, etc…)
+
+what kind of situations do you find most stressful?
+
+When I have multiple or intense deadlines, I use a strict schedule to break tasks down into manageable parts and approach them individually. For example, at my last job, a coworker got sick, and I had to deliver a project plan in a week. I sat down and broke down my tasks, scheduling each segment. As a result, I could complete the project a day ahead of the deadline and get back to my other commitments."
+
+
+have you ever had to deal with conflicting deadlines?
+
+As soon as I arrive at work, I list the tasks that require completion and prioritise them according to their due dates. This assists me in managing my workload and keeping me on track with my daily goals.'
+My daily to-do list assists me in maintaining a consistent workflow, but I know priorities might adjust. Therefore, I aim to keep the number of daily tasks to a minimum to save time if my daily workload changes.'
+
+Why do we hire you?
+“Over the years, I have acquired relevant skills and experience, which I shall bring to your organization. I have also worked tirelessly on my communication abilities and teamwork skills, which I will put to use in my future career, which would be in your organization if I am selected for the position.
+
+
+Why do you want to join this company?
+“I see this opportunity as a way to contribute to an exciting/forward-thinking/fast-moving company/industry, and I feel I can do so by/with my …” “I feel my skills are particularly well-suited to this position because …” “I believe I have the type of knowledge to succeed in this role and at the company because …”
+
+
+Objectives and Responsibilities of the Lead DevOps Engineer
+
+Management: The Lead DevOps Engineer is tasked with the management and development of continuous integration and deployment solutions for production applications across various sites/software. He spearheads the creation of new technology infrastructures and maintains configuration management and automation tools.
+
+The Lead DevOps Engineer conducts training on junior DevOps engineers and other engineering teams on how to build processes where dependencies are represented clearly in code. The DevOps Engineer plays an operational role by troubleshooting issues in development systems and is also responsible for the architecture and technical leadership of the entire DevOps infrastructure.
+
+He enables the automation of configuration management of all development, quality assurance, and production servers as well as the automation of continuous integration and continuous delivery.
+
+Strategy: The Lead DevOps Engineer is also tasked with the creation of software deployment strategies that allow DevOps engineers to successfully deploy sites/software in any environment. He is also responsible for the updating of configuration management tools, code, and modules for the purpose of streamlining implementation and supportability.
+
+Design and Development: The DevOps Engineer is in charge of designing, building, and optimizing comprehensive automation systems that operate the business’s web, mobile, and data infrastructure platforms.
+
+Collaboration and Support: The role of the Lead DevOps is a collaborative role where he assists junior DevOps teams in the navigation of technologies such as Python, Ruby, Scala, MySQL, MongoDB and so forth. The Lead DevOps Engineer also coaches the engineering development department personnel in the workings of reusable tools and patterns, for example, reusable code.
+
+
+ https://www.simplilearn.com/team-leader-interview-questions-and-answers-article
+
+
+
+Project details:
+---------------
+
+Project name: EDWARD( Enterprise data warehouse and research deport)
+Client: Anthem
+Users handled: 5600
+devops team size: 5( 3 junior, 1 serior and tech lead)
+Features: Medicaid, Madicare, Employers, producers, Providers
+
+I’m working on EDWARD project, Here we are following agile methodology and 2 weeks sprint, every 2 weeks we have production deployment, till 2 weeks my developers they are providing the code for deploying into dev environment, UAT and prod environments.
+
+Developers develop the code in the format of java, and this source code is managed by version control system tool like GIT
+
+Developers send this code to the Github repository and any changes made in the code is committed to this repository.
+
+After Jenkins pull this code from the repository using the git plugin and automate using gitwebhooks and we are providing Jenkins URL in gitwebhook configuration and build it using tools like maven
+
+After build triggers and build successful, Jenkins releases this code on the test environment (we have dev, UAT, staging and PROD environments)
+
+Once code is tested , we have provided production server details in Jenkins.
+
+Jenkins sent for deployment in production server using service iD
+
+After deployment and it’s continuously monitoring by tools like splunk
+
+We used to create the request or tickets in JIRA canban boards, every day we have a standup call, in that we have to discuss what task we are doing currently and what task next I’m going to implement and what tasks is completed.
+	
+We have to update the complete status to the client.
+
+This is the work culture we are following in our organization
+
+
+A Data Engineering professional with extensive experience in Data Analytics, Data pipeline, Data Modelling, Data warehousing, ETL- BI applications design & development.
+
+Strong experience in data Extracting, Transforming, and Loading (ETL) from various sources such as flat file, XML file and Tables to Teradata. 
+
+When Should You Escalate an Issue at Work?
+
+1.Acknowledge the problem
+
+2. Try to find a solution - Talk with the individual involved with the issue to see if there is a reason for their actions or lack of actions, and try to find a solution. For instance, if they are having trouble meeting deadlines, try to find out what is causing them to turn work in late. If it's due to them not knowing all of their job responsibilities.
+
+3. Collect evidence - Begin gathering proof of the issue occurring so that you have something to show your upper management. You may want to consider documenting discussions you had with the individual or saving email conversations. Doing so can ensure you have proof of any actions you took and what the other party's response was in case there is any disagreement later.
+
+4. Explain the issue
+
+Provide background context: Give a summary about the situation that led to your need for an escalation, including the who, what, where, when, why and how.
+
+Make a request: Share with the team lead what you would like for them to do to help you resolve the issue, providing a time frame for when you need their help.
+
+Mention any challenges: Let your team lead know about any specific challenges you have for them, such as needing a response from them by the end of the day or requiring their specific expertise.
+
+Include the impact: Share with the team lead what may result if they don't provide you with assistance, such as your team not being able to meet an upcoming deadline due to an employee not accomplishing their tasks.
+
+
+
+
+Benefits of DevOps:
+------------------
+Faster, better product delivery.
+Faster issue resolution and reduced complexity.
+Greater scalability and availability.
+More stable operating environments.
+Better resource utilization.
+Greater automation.
+Greater visibility into system outcomes.
+Greater innovation.
+
+
+
+
+Notice period issue:
+-------------------
+
+If you required immediate requirement, if your okay, I will support offline un officially as consultent upto 1 or 2 months,you can hire full-time after that, I will manage both the jobs. As per your wish you can pay me
+
+meantime i will login and take all KT's, I can balance both 
+
+Officially 3 months, I had a discussion with manager, So I can release with in 2 months, My project is completed working on minure small enhancements and it will take 1 month, client wants some modifications and workig on it.
+
+
+Strenths: My strength is I'm self-motivated, a good listener and I have the ability to do work properly and quickly
+
+Weakness: My weakness tends to say no to anything when asking for help.
+
+
+After 5 years:
+After 5 years, I would like to see myself as a successful person will be a archieche in organization, I don't want to stop the learning process with my job. I will definitely improve my skills for the best performance in the company.
+ l see myself in a good position and better life and growing along with the company.
+
+
+IBM responsibilities:
+Having experience in On-premises to cloud(Azure) migration activities. Expertise in micro service based applications and container orchestration using Kubernetes. Proven experience in Build/Release activities. Knowledge on Microsoft Azure services and deployment activities.
+Experience in creating Build/Release pipelines in Azure-DevOps
+Experience in creating Linux agent and Integration of CI/CD for AKS cluster in Azure. 
+Experience in creating Linux agent and Integration of CI/CD for AKS cluster in Azure. 
+Experience on Infrastructure as a code using Azure resource manager(ARM) and Terraform
+Experience in Tokenize the data in snowflake and deploy Hadoop application in Cloud as Azure. 
+A Data Engineering professional with extensive experience in Data Analytics, Data pipeline, Data Modelling, Data warehousing, ETL- BI applications design & development.
+Strong experience in data Extracting, Transforming, and Loading (ETL) from various sources such as flat file, XML file and Tables to Teradata.
+
+
+
+
+
+
+
+
+
+
+
+

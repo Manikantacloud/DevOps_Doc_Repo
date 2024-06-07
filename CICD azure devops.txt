@@ -1,0 +1,184 @@
+azure services:
+-------------
+
+subscriptions
+
+Resource groups
+
+azure Vm's
+
+azure active directory
+
+key valuts
+
+AKS
+
+Azure-devops orgainzations
+
+storage accounts
+
+Vnet
+
+kubernetes helm charts
+
+Azure devops yaml based pipelines
+
+terraform provisoners 
+
+subscription --> R.G -->services 
+
+Based on subscription you have to pay money
+
+RG --> We can create multiple resources under we have services
+
+Active directory- create users and assign roles
+                  users--> name of user --> assign roles --> application developer
+
+Virtual machine -- To create servers
+
+
+Azure-devops --> create organization --> inside create project( private)
+
+Boards--> to track history of project of everyone work --> Create work items --> assign it to team members
+
+Repos --> To store the source code of your project --> clone the HTTP URL to local --> push your maven code
+
+
+
+
+CI/CD pipeline in Azure-devOps
+
+1. Required server( VM)
+
+2. Agent - should be online
+
+2.1 Create kubernetes cluster(AKS) and download .kube configuration file
+
+3. Integrate Git, Kubenetes to azure-devops
+
+4. deployment code should be there in SCM( git hub)
+
+5. AKS cluster
+
+6. create azure-devops pipeline to deploy application
+
+
+2.How to install linux agent in azure-devops
+
+Go to Azure-devops service--> click on my azure-devops organizations
+
+select your organization --> click on project settings --> In pipelines(click on agent pools)
+
+Click on add pool --> Pool type is self hosted agent --> provide name of agent
+
+click on your agent -->select new agent --> select Linux --> click on download( agent-linux.tar.gz).
+
+copy that tar file into Virtual machine ---> exact that tar file--> run ./config file
+
+provide Server URL, PAT, Agent name to configure --> run command as run.sh file
+
+your agent will be on online
+
+
+3. Integrate with GIt:
+   
+click on project settings --> under service connections --> click new service connection
+
+Select connection type as GitHub --> Authentication method( Grant Authorization), Oauth configuration as (Azure pipelines) --> Click on Autherize to authenticate Guthub account -->provide service connection name --> save  
+
+
+Integrate in Kubernetes:
+
+
+click on project settings --> under service connections --> click new service connection
+
+
+Select connection type as kubenetes --> Authentication method as KubecConfig --> Provide Kubeconfig details (download .kube/config file from Cluster) then automatically it will verify --> provide service connection name --> verify & save
+
+
+7. Select classic pipline --> Select Github under provide repository & Branch name --> click on continue --> Select a template as Azure Kubernetes service --> under the Tasks we have Pipeline, under Agent Job details are there --> Select the Agent pool as your agent name --> click on + option to add kubectl --> select kubenetes service connection type( kubentesmani) --> select command as apply --> Arguments as -f nginx-deployment.yaml --> click on Save --> after click on Queue to build the pipeline --> It will ask the which agent needs to run the pipeline --> click on run --> build successful
+
+open kubenetes service in azure --> click on services and ingress --> under service we have nginx-service also external IP address we have 
+
+
+About PATs in Azure-devops:
+--------------------------
+
+A personal access token contains your security credentials for Azure DevOps. A PAT identifies you, your accessible organizations, and scopes of access. As such, they're as critical as passwords, so you should treat them the same way.
+
+
+Diff b/w self hosted agents and Microsoft hosted agents:
+------------------------------------------------------
+
+Microsoft-hosted agents are run in individual VMs, which are re-imaged after each run. Each agent is dedicated to a single organization.
+
+An agent that you set up and manage on your own to run jobs is a self-hosted agent.Self-hosted agents give you more control to install dependent software needed for your builds and deployments.
+
+
+
+How do you renewal the azure certificates if it is expired
+-----------------------------------------------------------
+
+Update certificate lifecycle attributes at the time of creation
+On the Key Vault properties pages, select Certificates.
+
+Select Generate/Import.
+
+On the Create a certificate screen, update the following values:
+
+Validity Period: Enter the value (in months). Creating short-lived certificates is a recommended security practice. By default, the validity value of a newly created certificate is 12 months.
+
+Lifetime Action Type: Select the certificate's auto-renewal and alerting action and then update percentage lifetime or Number of days before expiry. By default, a certificate's auto-renewal is set at 80 percent of its lifetime. From the drop-down menu, select one of the following options.
+
+Automatically renew at a given time	Email all contacts at a given time
+Selecting this option will turn on autorotation.	Selecting this option will not auto-rotate but will only alert the contacts.
+You can learn about setting up Email contact here
+
+Select Create.
+
+
+
+4.What is azure API management service in azure
+-----------------------------------------------
+
+https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-app-insights
+
+API Management integrates with Azure Application Insights - an extensible monitoring service for developers building and managing apps on multiple platform
+
+5. What is Kafka used for?
+
+What is Kafka used for?
+
+Kafka is used to build real-time streaming data pipelines and real-time streaming applications. A data pipeline reliably processes and moves data from one system to another, and a streaming application is an application that consumes streams of data.
+
+
+What is Azure Function? 
+Azure Function is a serverless compute service that enables user to run event-triggered code without having to provision or manage infrastructure. Being as a trigger-based service, it runs a script or piece of code in response to a variety of events.
+
+Azure storge account redundancy types:
+----------------------------------
+Locally- Redundant storage( LRS)
+
+Geo- redundant storage( GRS)
+
+Zone- redundant storage( ZRS)
+
+Geo-Zone-Redundant storage( GZRS)
+
+
+
+Azure storage account:
+
+Storage account provide containers to store the data, there must be security management
+
+2 types of security- Network & Encryption
+
+Enryption type:SMK (Service mananged keys)
+              CMK (coustmer managed keys
+
+
+
+
+
+
+
